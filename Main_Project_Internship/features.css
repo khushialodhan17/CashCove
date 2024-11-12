@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(bgPicMain.png);
+    color: brown;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header a {
+    color: brown;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.header .login {
+    border: 1px solid brown;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.title {
+    font-size: 2em;
+    margin: 20px 0;
+    color: rgb(47, 46, 46);
+}
+.description {
+    font-size: 1em;
+    margin: 20px 0;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background-color: rgb(67, 66, 66);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card h3 {
+    margin: 10px 0;
+    color: yellow;
+}
+.card p {
+    font-size: 0.9em;
+    color: white;
+}
+.card button {
+    background-color: #ff4500;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.img2{
+    height: 200px;
+}
+.img3{
+    height: 200px;
+}
+.description{
+    font-size: x-large;
+    font-style:normal;
+    font-weight: bold;
+    color: rgb(169, 63, 63);
+    font-family: 'Times New Roman', Times, serif;
+}

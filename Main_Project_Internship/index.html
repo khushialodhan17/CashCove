@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="AboutUs.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#HomePage">Home</a></li>
+            <li><a href="AboutUs">About Us</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="et.html">Manage Expenses</a></li>
+            <li><a href="graph.html">Analytics</a></li>
+            <li><a href="">Login</a></li> 
+            <li><a href="">Register</a>
+        </ul>
+
+        <ul>
+            <li><a href="#">CashCove</a></li>
+            <li class="hideOnMobile"><a href="#HomePage">Home</a></li>
+            <li class="hideOnMobile"><a href="#AboutUs">About Us</a></li>
+            <li class="hideOnMobile"><a href="#Features">Features</a></li>
+            <li class="hideOnMobile"><a href="et.html">Manage Expenses</a></li>
+            <li class="hideOnMobile"><a href="graph.html">Analytics</a></li>
+            <li class="hideOnMobile"><a href="">Login</a></li> 
+            <li class="hideOnMobile"><a href="">Register</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- Navbar Linked Starts -->
+    <!-- <div id="navbar-placeholder"></div>
+    <script> -->
+        <!-- // used the co-pilot code here , check before submitting . also have added ids to navbar.html in the login and register button -->
+        <!-- document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    });
+    </script> -->
+    <!-- Navbar Linked Ends -->
+
+    <!-- HomePage Starts -->
+    <div id="HomePage" class=siteName-div>
+        <div class="site-name">
+            <h1>
+                C A S H C O V E
+            </h1>
+    <br>
+            <h3>
+                "Manage, Track, and Save – Your Finances Made Easy"
+            </h3>
+        </div>
+
+        <div class="img-home">
+            <img class="HomePage" src="Monthly Budget Layout.jpeg" alt="Home Page Finance Pic">
+        </div>
+        
+    </div>
+    <!-- HomePage Ends -->
+
+    <!-- About us starts -->
+     <br>
+     <br>
+    <div id="AboutUs" class="promo-container">
+        <h1>Why Master your Expenses?</h1>
+        <p>
+            <strong id="quote">"A budget is telling your money where to go instead of wondering where it went."</strong> 
+            <p class="para0"> Achieving control over your finances opens doors to financial stability, reduces stress, and empowers you to make confident,
+                informed decisions for a prosperous future."
+            </p>
+        </p>
+        <div class="promo-section">
+            <div class="promo-card">
+                <div class="icon purple-bg">
+                    <img class="logo1" src="abt3.png" alt="Coding Icon">
+                </div>
+                <h2>Chronicle Your Expenses</h2>
+                <p class="para1">Effortlessly add and view your expenses. Access a comprehensive history of all your previous transactions, ensuring you never lose track of your financial activities.</p>
+            </div>
+            <div class="promo-card">
+                <div class="icon pink-bg">
+                    <img class="logo1" src="abtAnalytic.png" alt="Graduation Icon">
+                </div>
+                <h2>Journey Through Expense Graphs</h2>
+                <p class="para1">Dive into detailed analytics with graphical representations of your expenses. Easily compare monthly increases and decreases to understand your spending patterns better.</p>
+            </div>
+            <div class="promo-card">
+                <div class="icon yellow-bg">
+                    <img class="logo1" src="abtManage.png" alt="Graph Icon">
+                </div>
+                <h2>Mastering Financial Wisdom</h2>
+                <p class="para1">Learn effective money management strategies. Gain insights to help you make smarter spending decisions and improve your overall financial health.</p>
+            </div>
+        </div>
+    </div>
+    <!-- About us ends -->
+
+    <!-- Features Starts -->
+    <div id="Features" class="container">
+        <div class="title">
+            <h2>Track, Save, Thrive.</h2>
+        </div>
+        <div class="description">
+            <p>With our personalized expense tracker, effortlessly add and view your expenses while gaining valuable insights 
+                through detailed analytics. Manage your finances seamlessly and make informed decisions with ease.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>01</h3>
+                <img src="Addexpensefinal.jpg" alt="add expenses">
+                <h3>Add/View Expenses</h3>
+                <p>In 20 years of complete mastery, Master Dan and Josh Dean have created one of those personal stories.</p>
+                <button>Expand Photo</button>
+            </div>
+            <div class="card">
+                <h3>02</h3>
+                <img class="img2" src="AddExpensesMain.webp" alt="Analytics">
+                <h3>View Analytics</h3>
+                <p>In 20 years of complete mastery, Master Dan and Josh Dean have created one of those personal stories.</p>
+                <button>Explore</button>
+            </div>
+            <div class="card">
+                <h3>03</h3>
+                <img class="img3" src="tipsNewFeature.webp" alt="Manage money better">
+                <h3>Manage Your Money Better</h3>
+                <p>In 20 years of complete mastery, Master Dan and Josh Dean have created one of those personal stories.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+    <!-- Features Ends -->
+
+    <!-- Footer starts -->
+    <footer class="footer">
+        <div class="section">
+            <br>
+            <p>This website is coded by <strong>Khushi Alodhan</strong>.</p>
+            <br>
+            <br>
+            <p><img class="footer-pic" src="footerPic.png" alt="SheCodes Logo"> &copy; 2024</p>
+        </div>
+        <div class="section">
+            <h3>Quick Links</h3>
+            <br>
+            <p><a href="et.html">Add Expenses Section</a></p>
+            <br>
+            <p><a href="graph.html">Analytics Section</a></p>
+            <br>
+            <p><a href="#">Manage money better section</a></p>
+            <br>
+        </div>
+        <div class="section">
+            <h3>Follow us</h3>
+            <br>
+            <!-- Add the website link in the foundation part -->
+            <p><a href="#">Foundation</a></p> 
+            <br>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <br>
+            <p><a href="https://www.linkedin.com/feed/">LinkedIn</a></p>
+            <br>
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <br>
+            <p><a href="https://x.com/home">Twitter</a></p>
+            <br>
+        </div>
+        <div class="section policy-section">
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Cookie Policy</a> | <a href="#">Code of Conduct</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

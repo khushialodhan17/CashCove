@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: rgb(107, 104, 104);
+    padding: 20px;
+    text-align: center;
+    /* position: sticky;
+    bottom: 0; */
+    width: 96%;
+    margin-left: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Changed to space-between */
+    align-items: flex-start;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.footer .section {
+    margin: 10px;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    color: white;
+}
+
+.footer .policy-section {
+    flex: 1 1 100%; /* Ensures it takes the full width */
+    text-align: center;
+    margin-top: 10px; /* Adds some space above */
+}
+
+.footer h3{
+    color: white;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    color: yellow;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-pic{
+    border-radius: 15%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-pic:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    transition: box-shadow 0.3s ease-in-out;
+}

@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.promo-container h1{
+    color: black;
+}
+
+#quote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.logo1{
+    width: 25px;
+    height: 25px; 
+}
+
+.para0{
+    color: yellow;
+    font-weight: bold;
+}
+
+.para1{
+    color: rgb(76, 75, 75);
+}
+
+.promo-container {
+    background-color: #b15858;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* max-width: 700px; */
+    margin: auto;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 96%;
+}
+
+.promo-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.promo-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.promo-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.promo-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.promo-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 28%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.promo-card p {
+    font-size: 14px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.promo-card:hover .icon {
+    transform: rotate(360deg);
+}
+
+.purple-bg {
+    background-color: #8a2be2;
+}
+
+.pink-bg {
+    background-color: #ff69b4;
+}
+
+.yellow-bg {
+    background-color: #ffd700;
+}

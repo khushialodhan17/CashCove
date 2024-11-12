@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+                });
+        });
+    </script>
+    <div class=siteName-div>
+        <div class="site-name">
+            <h1>
+                C A S H C O V E
+            </h1>
+    <br>
+            <h3>
+                "Manage, Track, and Save – Your Finances Made Easy"
+            </h3>
+        </div>
+
+        <div class="img-home">
+            <img class="HomePage" src="Monthly Budget Layout.jpeg" alt="Home Page Finance Pic">
+        </div>
+        
+    </div>
+    
+</body>
+</html>

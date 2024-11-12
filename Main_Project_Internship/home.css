@@ -1,0 +1,40 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.siteName-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    top:-10px;
+    width: 100vw;
+}
+
+.site-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+    color: rgb(47, 46, 46);
+}
+
+h3{
+    font-size: 23px;
+    color: brown;
+}
+
+.HomePage{
+    width: 300px;
+    height: 520px;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px brown;
+}

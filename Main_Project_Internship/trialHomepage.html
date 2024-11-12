@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEATURES</title>
+    <link rel="stylesheet" href="features.css">
+    
+</head>
+<body>
+    <!-- Navbar Linked -->
+    <div id="navbar-placeholder"></div>
+
+    <script>
+
+        // used the co-pilot code here , check before submitting . also have added ids to navbar.html in the login and register button
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    });
+    </script>
+
+
+<!-- Main code starts -->
+
+
+    <div class="container">
+        <div class="title">
+            <h2>Track, Save, Thrive.</h2>
+        </div>
+        <div class="description">
+            <p>With our personalized expense tracker, effortlessly add and view your expenses while gaining valuable insights 
+                through detailed analytics. Manage your finances seamlessly and make informed decisions with ease.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>01</h3>
+                <img src="Addexpensefinal.jpg" alt="add expenses">
+                <h3>Add/View Expenses</h3>
+                <p>In 20 years of complete mastery, Master Dan and Josh Dean have created one of those personal stories.</p>
+                <button>Expand Photo</button>
+            </div>
+            <div class="card">
+                <h3>02</h3>
+                <img class="img2" src="AddExpensesMain.webp" alt="Analytics">
+                <h3>View Analytics</h3>
+                <p>In 20 years of complete mastery, Master Dan and Josh Dean have created one of those personal stories.</p>
+                <button>Explore</button>
+            </div>
+            <div class="card">
+                <h3>03</h3>
+                <img class="img3" src="tipsNewFeature.webp" alt="Manage money better">
+                <h3>Manage Your Money Better</h3>
+                <p>In 20 years of complete mastery, Master Dan and Josh Dean have created one of those personal stories.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Food Expenses</title>
+  <link rel="stylesheet" href="graph.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar Linked Starts -->
+  <div id="navbar-placeholder"></div>
+  <script>
+      // used the co-pilot code here , check before submitting . also have added ids to navbar.html in the login and register button
+      document.addEventListener("DOMContentLoaded", function () {
+          fetch("navbar.html")
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+  });
+  </script>
+  <!-- Navbar Linked Ends -->
+
+
+
+
+  <h1>Monthly Food Expenses</h1>
+  <form id="expensesForm">
+    <div class="form-group">
+      <label for="january">January:</label>
+      <input type="number" id="january" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="february">February:</label>
+      <input type="number" id="february" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="march">March:</label>
+      <input type="number" id="march" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="april">April:</label>
+      <input type="number" id="april" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="may">May:</label>
+      <input type="number" id="may" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="june">June:</label>
+      <input type="number" id="june" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="july">July:</label>
+      <input type="number" id="july" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="august">August:</label>
+      <input type="number" id="august" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="september">September:</label>
+      <input type="number" id="september" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="october">October:</label>
+      <input type="number" id="october" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="november">November:</label>
+      <input type="number" id="november" placeholder="Enter amount" required>
+    </div>
+    <div class="form-group">
+      <label for="december">December:</label>
+      <input type="number" id="december" placeholder="Enter amount" required>
+    </div>
+    <button type="submit">Generate Graph</button>
+  </form>
+  <canvas id="expensesChart" width="400" height="200"></canvas>
+  <script src="graph.js"></script>
+</body>
+</html>

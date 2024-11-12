@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Code</title>
+    <link rel="stylesheet" href="nvcheck.css">
+    <link rel="stylesheet" href="login/style.css">
+</head>
+<body>
+    <nav>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="et.html">Manage Expenses</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+
+        </ul>
+
+        <ul>
+            <li><a href="#">CashCove</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a></li>
+            <li class="hideOnMobile"><a href="#">Features</a></li>
+            <li class="hideOnMobile"><a href="#">Manage Expenses</a></li>
+            <li class="hideOnMobile"><a href="#">Analytics</a></li>
+            <li class="hideOnMobile"><a href="#" id="main-login-btn">Login</a></li>
+            <li class="hideOnMobile"><a href="#" id="main-register-btn">Register</a></li>
+
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+
+  <script>
+    // For the sidebar register button
+document.getElementById('register-btn').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    showRegisterForm();
+    hideSidebar();  // Hide the sidebar when showing the register form
+});
+
+// For the main navbar register button
+document.getElementById('main-register-btn').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    showRegisterForm();
+});
+
+function showRegisterForm() {
+    // Check if the register form already exists, to avoid multiple forms being appended
+    if (document.querySelector('.form-container')) return;
+
+    const formContainer = document.createElement('div');
+    formContainer.classList.add('form-container');
+    
+    // Append the registration form HTML
+    formContainer.innerHTML = `
+        <form action="" method="post">
+            <h3>register now</h3>
+            ${getErrorsHtml()}
+            <input type="text" name="name" required placeholder="Enter your Name">
+            <input type="email" name="email" required placeholder="Enter your Email">
+            <input type="password" name="password" required placeholder="Enter your Password">
+            <input type="password" name="cpassword" required placeholder="Confirm your Password">
+            <select name="user_type">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <input type="submit" name="submit" value="register now" class="form-btn">
+            <p>Already have an account? <a href="login_form.php">Login Now</a></p>
+        </form>
+    `;
+
+    document.body.appendChild(formContainer);
+}
+
+function getErrorsHtml() {
+    let errors = '';
+    if (typeof error !== 'undefined') {
+        error.forEach(err => {
+            errors += `<span class="error-msg">${err}</span>`;
+        });
+    }
+    return errors;
+}
+
+// Sidebar toggle functions
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+// For the sidebar login button
+document.getElementById('login-btn').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    showLoginForm();
+    hideSidebar();  // Hide the sidebar when showing the login form
+});
+
+// For the main navbar login button
+document.getElementById('main-login-btn').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    showLoginForm();
+});
+
+function showLoginForm() {
+    // Check if the login form already exists, to avoid multiple forms being appended
+    if (document.querySelector('.form-container')) return;
+
+    const formContainer = document.createElement('div');
+    formContainer.classList.add('form-container');
+    
+    // Append the login form HTML
+    formContainer.innerHTML = `
+        <form action="" method="post">
+            <h3>Login Now</h3>
+            ${getErrorsHtml()}
+            <input type="email" name="email" required placeholder="Enter your Email">
+            <input type="password" name="password" required placeholder="Enter your Password">
+            <input type="submit" name="submit" value="Login Now" class="form-btn">
+            <p>Don't have an account? <a href="register_form.php">Register Now</a></p>
+        </form>
+    `;
+
+    document.body.appendChild(formContainer);
+}
+
+function getErrorsHtml() {
+    let errors = '';
+    if (typeof error !== 'undefined') {
+        error.forEach(err => {
+            errors += `<span class="error-msg">${err}</span>`;
+        });
+    }
+    return errors;
+}
+// For the sidebar login button
+document.getElementById('login-btn').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    showLoginForm();  // Show login form
+    hideSidebar();  // Hide the sidebar
+});
+
+// For the main navbar login button
+document.getElementById('main-login-btn').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    showLoginForm();  // Show login form
+});
+
+function showLoginForm() {
+    // Check if the login form already exists, to avoid multiple forms being appended
+    if (document.querySelector('.form-container')) return;
+
+    const formContainer = document.createElement('div');
+    formContainer.classList.add('form-container');
+    
+    // Append the login form HTML
+    formContainer.innerHTML = `
+        <form action="" method="post">
+            <h3>Login Now</h3>
+            ${getErrorsHtml()}
+            <input type="email" name="email" required placeholder="Enter your Email">
+            <input type="password" name="password" required placeholder="Enter your Password">
+            <input type="submit" name="submit" value="Login Now" class="form-btn">
+            <p>Don't have an account? <a href="register_form.php">Register Now</a></p>
+        </form>
+    `;
+
+    document.body.appendChild(formContainer);
+}
+
+function getErrorsHtml() {
+    let errors = '';
+    if (typeof error !== 'undefined') {
+        error.forEach(err => {
+            errors += `<span class="error-msg">${err}</span>`;
+        });
+    }
+    return errors;
+}
+
+
+  </script>
+    
+    
+
+</body>
+</html>
