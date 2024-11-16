@@ -52,6 +52,7 @@ function addTransactionDOM(transaction) {
   item.innerHTML = `
     ${transaction.text} <span>${sign}${Math.abs(transaction.amount)}</span>
     <button class="delete-btn" onclick="removeTransaction(${transaction.id})">x</button>
+    <span class="date">${new Date(transaction.date).toLocaleDateString()}</span>
   `;
   list.appendChild(item);
 }
