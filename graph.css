@@ -41,4 +41,26 @@ body {
     display: block;
     margin: 0 auto;
   }
+
+  .instructions {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .instructions h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .instructions ol {
+    padding-left: 20px;
+  }
+  
+  .instructions li {
+    margin-bottom: 10px;
+  }
+  
   
