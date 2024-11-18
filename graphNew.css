@@ -41,28 +41,4 @@ body {
     display: block;
     margin: 0 auto;
   }
-
-  .instructions {
-    background-color: rgb(222, 218, 218);
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 0px;
-    width: 100vw;
-    margin-bottom: 0px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-  }
-  
-  .instructions h2 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .instructions ol {
-    padding-left: 20px;
-  }
-  
-  .instructions li {
-    margin-bottom: 10px;
-  }
-  
   
